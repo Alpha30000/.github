@@ -1,9 +1,12 @@
 
 # Alpha30000
-
 <div align="center">
 
 ![header](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0F172A,45:1E3A8A,100:22C55E&text=Alpha30000&fontColor=F8FAFC&fontSize=64&fontAlignY=38&desc=%EC%95%8C%ED%8C%8C%EC%B0%BE%EC%95%84%EC%82%BC%EB%A7%8C%EB%A6%AC%20%7C%20%ED%81%AC%EB%A6%BD%ED%86%A0%20%ED%80%80%ED%8A%B8%20%EC%97%B0%EA%B5%AC%20%EB%B0%8F%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9&descAlignY=58&descSize=18)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Alpha30000/.github/main/profile/alpha30000_round_logo.svg" width="220" alt="Alpha30000 Logo" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Quant%20Research-Crypto%20Long%2FShort-0F172A?style=for-the-badge&logo=bitcoin&logoColor=F7931A" />
