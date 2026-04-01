@@ -1,0 +1,58 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="120" x2="864" y2="904" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.55" stop-color="#101A38"/>
+      <stop offset="1" stop-color="#132B58"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="180" y1="160" x2="844" y2="864" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7DD3FC"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="310" y1="260" x2="720" y2="750" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0.2
+                0 0 1 0 0.3
+                0 0 0 0.25 0"/>
+      <feBlend mode="screen" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Outer badge -->
+  <circle cx="512" cy="512" r="452" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="452" stroke="url(#ring)" stroke-width="26"/>
+  <circle cx="512" cy="512" r="398" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <circle cx="512" cy="512" r="365" stroke="rgba(125,211,252,0.20)" stroke-width="1.5" stroke-dasharray="8 14"/>
+
+  <!-- Orbit / signal path -->
+  <path d="M254 612C318 582 357 548 408 486C444 441 478 394 533 353C592 309 664 283 769 283"
+        stroke="url(#ring)" stroke-width="18" stroke-linecap="round" opacity="0.9" filter="url(#softGlow)"/>
+  <circle cx="768" cy="283" r="18" fill="#34D399"/>
+  <circle cx="768" cy="283" r="30" stroke="#34D399" stroke-opacity="0.28" stroke-width="8"/>
+
+  <!-- Central A mark -->
+  <path d="M514 240L705 708H612L566 586H438L392 708H319L510 240H514Z" fill="url(#mark)"/>
+  <path d="M461 526H543L502 416L461 526Z" fill="url(#bg)"/>
+
+  <!-- Embedded 3 bars / alpha signal -->
+  <rect x="474" y="558" width="20" height="70" rx="10" fill="#34D399"/>
+  <rect x="507" y="530" width="20" height="98" rx="10" fill="#60A5FA"/>
+  <rect x="540" y="494" width="20" height="134" rx="10" fill="#7DD3FC"/>
+
+  <!-- Lower text -->
+  <g opacity="0.95">
+    <text x="512" y="812" text-anchor="middle"
+      font-family="Inter, Pretendard, Segoe UI, Arial, sans-serif"
+      font-size="88" font-weight="800" letter-spacing="3" fill="#F8FAFC">A30000</text>
+    <text x="512" y="865" text-anchor="middle"
+      font-family="Inter, Pretendard, Segoe UI, Arial, sans-serif"
+      font-size="24" font-weight="600" letter-spacing="8" fill="#93C5FD">ALPHA JOURNEY</text>
+  </g>
+</svg>
